@@ -25,9 +25,5 @@
 3. 进入 Typecho 后台 -> **设置插件 TurnstileLogin**，填入对应的公钥与私钥并选择主题模式，最后保存设置。
 
 ### 2. 后端设置
-*由于 Typecho 原生登录页面未提供钩子，如需开启后台登录验证，需自行在后台模板中插入组件代码：*
+*由于 Typecho 原生登录页面未提供钩子，如需开启后台登录验证，需自行在后台模板中插入组件代码*
 
-打开 Typecho 后台登录文件 `/admin/login.php`，在提交按钮前添加以下挂载代码：
-
-```php
-<?php Typecho_Plugin::factory('TurnstileLogin')->render(); ?>
