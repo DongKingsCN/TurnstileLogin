@@ -1,14 +1,13 @@
 # Typecho Cloudflare Turnstile 登录验证插件 (TurnstileLogin)
 
 ![Typecho Version](https://img.shields.io/badge/Typecho-1.2%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
 
-为 Typecho 提供 Cloudflare Turnstile 人机验证支持，无缝替换传统的登录验证码，防爆破、防自动化脚本攻击。
+为 Typecho 和 Typerenew（社区二改typecho） 提供 Cloudflare Turnstile 人机验证支持，无缝替换传统的登录验证码，防爆破、防自动化脚本攻击。
 
 ## 🌟 特性
 
 * **直接填入密钥**：后台集成可视化配置界面，轻松设置 Site Key 与 Secret Key。
-* **主题模式切换**：支持自动 / 浅色 / 暗色 主题适配，完美契合你的后台皮肤。
+* **主题模式切换**：支持自动 / 浅色 / 暗色 主题适配，完美契合你的后台风格。
 * **无感与高安全**：基于 Cloudflare 智能风控，大部分情况下用户免手动点击即可完成登录验证。
 
 ## 🛠️ 安装方法
@@ -25,7 +24,7 @@
 2. 获取 **Site Key（公钥）** 和 **Secret Key（私钥）**。
 3. 进入 Typecho 后台 -> **设置插件 TurnstileLogin**，填入对应的公钥与私钥并选择主题模式，最后保存设置。
 
-### 2. 后端挂载设置
+### 2. 后端设置
 *由于 Typecho 原生登录页面未提供钩子，如需开启后台登录验证，需自行在后台模板中插入组件代码：*
 
 打开 Typecho 后台登录文件 `/admin/login.php`，在提交按钮前添加以下挂载代码：
